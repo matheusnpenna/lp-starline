@@ -1,4 +1,4 @@
-# Landing page - Heroi.ai
+# Landing page - Starline
 
 ## Setup
 ```
