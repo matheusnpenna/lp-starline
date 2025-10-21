@@ -10,11 +10,10 @@ const postcss = require("gulp-postcss");
 gulp.task('scss', function() {
   const tailwindcss = require("tailwindcss");
   const autoprefixer = require("autoprefixer");
-  const config = require('./tailwind.config.js');
   
   return gulp.src('frontend/scss/app.scss')
     .pipe(sass())
-    .pipe(postcss([tailwindcss(config), autoprefixer()]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(purgecss({
       content: ['dist/**/*.html'],
       defaultExtractor: (c) => c.match(/[\w\-:.\/\[#%\]]+(?<!:)/g) || [],
