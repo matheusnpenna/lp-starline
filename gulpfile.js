@@ -34,7 +34,6 @@ gulp.task('watch', function() {
   gulp.watch('dist/**/*.html', gulp.series('js'));
   gulp.watch('frontend/js/*', gulp.series('js'));
   gulp.watch('frontend/scss/*', gulp.series('scss'));
-  gulp.watch('./tailwind.config.js', gulp.series('scss'));
 });
 
 gulp.task('default', gulp.series("scss", "js", "watch"));
