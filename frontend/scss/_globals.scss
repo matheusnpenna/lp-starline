@@ -18,6 +18,10 @@ body {
   max-width: 85%;
   margin: 0 auto;
   flex: 1;
+
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
+  }
 }
 
 a { text-decoration: none; color: inherit; }
@@ -76,27 +80,24 @@ a { text-decoration: none; color: inherit; }
   }
 }
 
-@media screen and (min-width: 991px) {
-  .starline-marquee {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+.starline-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 
-    &__inner {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      width: max-content;
-      animation: marqueeanimation 15s linear infinite;
-      * { margin-right: 40px;}
-    }
+  &__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: max-content;
+    animation: marqueeanimation 15s linear infinite;
+    * { margin-right: 40px;}
+  }
 
-    &__item {
-      max-width: 300px;
-    }
+  &__item {
+    max-width: 300px;
   }
 }
-
 
 @keyframes marqueeanimation {
   from { transform: translateX(0); }

@@ -15,7 +15,7 @@
     <meta property="og:description" content="Instalação sem custos e roteador consignado, suporte personalizado 24 horas por dia, conexão rápida 100% fibra ótica, navegue com rapidez e segurança">
     <meta property="og:site_name" content="Starline - Você sempre online">
     <meta property="og:url" content="https://starline.com.br/">
-    <meta property="og:image" content="/assets/img/logo.svg">
+    <meta property="og:image" content="/assets/img/og-logo.webp">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/browser/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/browser/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/browser/favicon-16x16.png">
@@ -306,7 +306,9 @@
     </section>
     <footer class="starline-footer">
       <div class="container">
-        <img class="starline-footer__logo md:mx-0" height="35.41px" width="145px" loading="lazy" src="/assets/img/logo-no-star.svg" alt="Starline logo">
+        <div class="starline-footer__logo-wrapper">
+          <img class="starline-footer__logo" height="35.41px" width="145px" loading="lazy" src="/assets/img/logo-no-star.svg" alt="Starline logo">
+        </div>
         <div class="grid">
           <div class="starline-footer__column">
             A Starline é uma provedora de internet comprometida em oferecer conexão de alta velocidade com estabilidade, tecnologia de ponta e atendimento de excelência.
@@ -378,9 +380,8 @@
     <aside>
       <div class="close-mobile-drawer">
         <button class="btn btn-close m-0 p-0">
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-            <rect y="14.1421" width="20" height="3" transform="rotate(-45 0 14.1421)" fill="white"/>
-            <rect x="2.12132" width="20" height="3" transform="rotate(45 2.12132 0)" fill="white"/>
+          <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.7695 6.20703L11.6758 12.3008L17.7188 18.3438C18.2266 18.8008 18.2266 19.5625 17.7188 20.0195C17.2617 20.5273 16.5 20.5273 16.043 20.0195L9.94922 13.9766L3.90625 20.0195C3.44922 20.5273 2.6875 20.5273 2.23047 20.0195C1.72266 19.5625 1.72266 18.8008 2.23047 18.293L8.27344 12.25L2.23047 6.20703C1.72266 5.75 1.72266 4.98828 2.23047 4.48047C2.6875 4.02344 3.44922 4.02344 3.95703 4.48047L10 10.5742L16.043 4.53125C16.5 4.02344 17.2617 4.02344 17.7695 4.53125C18.2266 4.98828 18.2266 5.75 17.7695 6.20703Z" fill="white"/>
           </svg>
         </button>
       </div>
@@ -393,6 +394,7 @@
           <a href="https://wa.me/557499949898?text=Preciso de ajuda" class="starline-header__nav-menu__item mobile-menu-item">SUPORTE</a>
           <a href="#section-contact" class="starline-header__nav-menu__item mobile-menu-item">CONTATO</a>
         </div>
+        <div style="flex: 1;"></div>
         <a href="https://starline.atlaz.com.br/central" target="_blank" class="starline-header__nav-client">Área do Cliente</a>
       </div>
     </aside>
