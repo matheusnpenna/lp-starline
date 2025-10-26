@@ -126,7 +126,7 @@
   .starline-header {
     --header-size: fit-content;
     --nav-size: 98px;
-    background-image: url(../img/bg/bg-header.webp?v=0.0.0.3);
+    background-image: url(../img/bg/bg-header.webp?v=0.0.0.4);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,7 +138,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      background-image: url(../img/bg/bg-header-mobile.webp?v=0.0.0.3);
+      background-image: url(../img/bg/bg-header-mobile.webp?v=0.0.0.4);
     }
 
     @media screen and (max-width: 540px) {
@@ -264,7 +264,7 @@
         position: relative;
         height: fit-content;
         width: fit-content;
-        padding-inline: 120px;
+        padding-inline: 100px;
 
         @media screen and (max-width: 540px) {
           padding-inline: 80px;
@@ -276,7 +276,7 @@
           background-color: #D04F9C;
           border-radius: 4px;
           padding: 4px 10px;
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 400;
           color: #fff;
           text-align: center;
@@ -287,7 +287,7 @@
           align-items: center;
           justify-content: center;
           @media screen and (max-width: 540px) {
-            font-size: 18px;
+            font-size: 16px;
             padding: 4px 8px;
           }
         }
@@ -388,7 +388,7 @@
   }
 
   .section-plans {
-    background-image: url(../img/bg/bg-section-plans.webp?v=0.0.0.3);
+    background-image: url(../img/bg/bg-section-plans.webp?v=0.0.0.4);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
