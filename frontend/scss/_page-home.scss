@@ -6,6 +6,7 @@
     border: none;
     text-decoration: none;
     padding: 1px;
+    width: 100%;
     cursor: pointer;
     
     * {
@@ -16,10 +17,11 @@
       border-radius: var(--border-radius);
       color: #FFFFFF;
       font-weight: 500;
-      font-size: 24px;
+      font-size: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 100%;
     }
   }
 
@@ -122,20 +124,21 @@
   }
 
   .starline-header {
-    --header-size: 75vh;
+    --header-size: fit-content;
     --nav-size: 98px;
-    background-image: url(../img/bg/bg-header.webp?v=0.0.0.2);
+    background-image: url(../img/bg/bg-header.webp?v=0.0.0.3);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: var(--header-size);
+    height: fit-content;
     padding-bottom: 80px;
     @media screen and (max-width: 992px) {
       background-position: 50%;
     }
 
     @media screen and (max-width: 768px) {
-      background-image: url(../img/bg/bg-header-mobile.webp?v=0.0.0.2);
+      background-image: url(../img/bg/bg-header-mobile.webp?v=0.0.0.3);
     }
 
     @media screen and (max-width: 540px) {
@@ -195,7 +198,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      height: calc(var(--header-size) - var(--nav-size));
+      height: fit-content;
 
       @media screen and (max-width: 991px) {
         align-items: flex-start;
@@ -214,16 +217,16 @@
       }
       
       &__speed {
-        font-size: 176px;
+        font-size: 146px;
         color: #FFFFFF;
         line-height: 80%;
         letter-spacing: 0%;
         font-weight: 700;
         position: relative;
         width: fit-content;
-        margin-bottom: 0;
+        margin-bottom: 0; 
         @media screen and (max-width: 540px) {
-          font-size: 136px;
+          font-size: 116px;
           margin-top: 40px;
           margin-right: auto;
           margin-left: auto;
@@ -233,12 +236,12 @@
           background-color: #D04F9C;
           border-radius: 4px;
           padding: 5px 6px;
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 700;
           color: #3F0D4E;
-          line-height: 24px;
+          line-height: 18px;
           text-align: center;
-          height: 24px;
+          height: 20px;
           width: 76px;
           position: absolute;
           top: 50%;
@@ -254,7 +257,7 @@
       }
 
       &__price {
-        font-size: 143px;
+        font-size: 90px;
         font-weight: bold;
         color: #FFFFFF;
         text-align: center;
@@ -273,7 +276,7 @@
           background-color: #D04F9C;
           border-radius: 4px;
           padding: 4px 10px;
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 400;
           color: #fff;
           text-align: center;
@@ -314,13 +317,13 @@
       &__navigation {
         border: 0.5px solid #FFFFFF;
         border-radius: 4px;
-        font-size: 18px;
+        font-size: 15px;
         color: #FFFFFF;
         padding: 4px 16px;
         width: fit-content;
         display: flex;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         span { margin-inline: 10px;}
         .pink {  font-size: 26px; color: #D04F9C; font-weight: 600; }
 
@@ -385,7 +388,7 @@
   }
 
   .section-plans {
-    background-image: url(../img/bg/bg-section-plans.webp?v=0.0.0.2);
+    background-image: url(../img/bg/bg-section-plans.webp?v=0.0.0.3);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
