@@ -28,7 +28,7 @@
   .starline-header {
     --header-size: fit-content;
     --nav-size: 98px;
-    background-image: url(../img/bg/bg-header.webp?v=0.0.0.5);
+    background-image: url(../img/bg/bg-header.webp?v=0.0.0.6);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      background-image: url(../img/bg/bg-header-mobile.webp?v=0.0.0.5);
+      background-image: url(../img/bg/bg-header-mobile.webp?v=0.0.0.6);
     }
 
     @media screen and (max-width: 540px) {
@@ -171,7 +171,7 @@
       &__navigation {
         border: 0.5px solid #FFFFFF;
         border-radius: 4px;
-        font-size: 15px;
+        font-size: 13px;
         color: #FFFFFF;
         padding: 4px 16px;
         width: fit-content;
@@ -180,6 +180,10 @@
         margin-bottom: 30px;
         span { margin-inline: 10px;}
         .pink {  font-size: 26px; color: #D04F9C; font-weight: 600; }
+
+        @media screen and (min-width: 1300px) {
+          font-size: 15px;
+        }
 
         @media screen and (max-width: 991px) {
           font-size: 16px;
@@ -227,7 +231,7 @@
   }
 
   .section-plans {
-    background-image: url(../img/bg/bg-section-plans.webp?v=0.0.0.5);
+    background-image: url(../img/bg/bg-section-plans.webp?v=0.0.0.6);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
