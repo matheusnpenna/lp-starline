@@ -76,8 +76,15 @@ function changePlansInfo(planType) {
           </a>
           <p class="section-plans__plans-item__info">Instalação grátis</p>
           <p class="section-plans__plans-item__info">100% fibra</p>
-          <p class="section-plans__plans-item__info">Download de até ${p.velocity} Mbps</p>
-          <p class="section-plans__plans-item__info">Upload de até ${p.velocity} Mbps</p>
+          <p class="section-plans__plans-item__info">Download de ${p.velocity} Mbps</p>
+          <p class="section-plans__plans-item__info">Upload de ${p.velocity} Mbps</p>
+          ${
+            planType === 'enterprise' ? `
+              <p class="section-plans__plans-item__info">IP Publico Fixo (A Negociar)</p>
+              <p class="section-plans__plans-item__info">Prioridade de atendimento</p>` 
+              : 
+              ''
+          }
         </div>
       </div>
     `).forEach(p => plansWrapper.insertAdjacentHTML('beforeend', p))
