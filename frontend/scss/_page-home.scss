@@ -237,29 +237,68 @@
     background-repeat: no-repeat;
 
     .starline-section__title { color: #FFFFFF; } 
+    
+    &__selector {
+      background-image: linear-gradient(164.61deg, #CA057B 1.36%, rgba(201, 19, 127, 0.5) 67.76%, #C72184 135.45%);
+      padding: 1px;
+      border-radius: 50px;
+      width: fit-content;
+      margin: 0 auto;
+      margin-block: 60px;
 
-    &__subtitle {
-      color: #FFFFFF;
-      margin-bottom: 40px;
+      &-switch {
+        background-color: rgba(74, 14, 87, 0.66);
+        padding: 10px;
+        border-radius: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+
+
+        &__item {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0%;
+          text-align: center;
+          color: #FFFFFF80;
+          text-transform: uppercase;
+          border-radius: 25px;
+          padding: 8px 16px;
+          min-width: 171px;
+          cursor: pointer;
+          transition: background-color .5s cubic-bezier;
+
+          &.active {
+            background-color: #F7FAFD;
+            color: #C72184;
+            font-weight: 700;
+          }
+        }
+      }
     }
 
     &__plans {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+      transition: all .8s ease-in-out;
 
       @media screen and (max-width: 1200px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
       }
 
       @media screen and (max-width: 600px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
       }
 
       &-item {
         background-image: linear-gradient(164.61deg, #CA057B 1.36%, rgba(201, 19, 127, 0.5) 67.76%, #C72184 135.45%);
         border-radius: 8px;
         padding: 1px;
+        transition: all .8s ease-in-out;
         --item-margin-bottom: 20px;
         
         &__content {
