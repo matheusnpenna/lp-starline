@@ -28,7 +28,7 @@
   .starline-header {
     --header-size: fit-content;
     --nav-size: 98px;
-    background-image: url(../img/bg/bg-header.webp?v=0.0.0.9);
+    background-image: url(../img/bg/bg-header.webp?v=0.0.0.10);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      background-image: url(../img/bg/bg-header-mobile.webp?v=0.0.0.9);
+      background-image: url(../img/bg/bg-header-mobile.webp?v=0.0.0.10);
     }
 
     @media screen and (max-width: 540px) {
@@ -231,7 +231,7 @@
   }
 
   .section-plans {
-    background-image: url(../img/bg/bg-section-plans.webp?v=0.0.0.9);
+    background-image: url(../img/bg/bg-section-plans.webp?v=0.0.0.10);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
