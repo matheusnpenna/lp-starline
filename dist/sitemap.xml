@@ -9,14 +9,18 @@
 
 <url>
   <loc>https://starline.com.br/</loc>
-  <lastmod>2025-09-06T16:21:47+00:00</lastmod>
+  <lastmod>2025-11-05T16:21:47+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://starline.com.br/politica-de-privacidade/</loc>
-  <lastmod>2025-09-06T16:22:14+00:00</lastmod>
+  <lastmod>2025-11-05T16:22:14+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://starline.com.br/trabalhe-conosco/</loc>
+  <lastmod>2025-11-05T16:22:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
 
 </urlset>
