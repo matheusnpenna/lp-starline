@@ -38,7 +38,7 @@ function changePlansInfo(planType) {
             ${p.price.int}
             <span class="section-plans__plans-item__price-cents">,${p.price.decimal}<span class="pink">/mês</span></span>
           </div>
-          <a href="https://wa.me/557499949898?text=Quero contratar o plano de 100 megas" target="_blank">
+          <a href="https://wa.me/557499949898?text=Quero contratar o plano de ${p.velocity} megas" target="_blank">
             <button class="btn btn-primary">
               <span>CONTRATAR</span>
             </button>
