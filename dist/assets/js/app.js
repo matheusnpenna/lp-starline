@@ -36,10 +36,10 @@ const plans = {
     { name: 'EMPRESARIAL 3', velocity: '500', price: { int: '340', decimal: '00' } }
   ],
   personal: [
-    { name: 'LIGHT', velocity: '100', price: { int:'64', decimal: '90' }  },
-    { name: 'PLUS', velocity: '200', price: { int:'69', decimal: '90' }  },
-    { name: 'TURBO', velocity: '300', price: { int:'89', decimal: '90' }  },
-    { name: 'ULTRA', velocity: '500', price: { int:'129', decimal: '90' } }
+    { name: 'LIGHT', velocity: '200', price: { int:'64', decimal: '90' }  },
+    { name: 'PLUS', velocity: '400', price: { int:'69', decimal: '90' }  },
+    { name: 'TURBO', velocity: '600', price: { int:'89', decimal: '90' }  },
+    { name: 'ULTRA', velocity: '800', price: { int:'129', decimal: '90' } }
   ]
 }
 
