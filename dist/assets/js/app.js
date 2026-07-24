@@ -36,11 +36,19 @@ const plans = {
     { name: 'EMPRESARIAL 3', velocity: '500', price: { int: '340', decimal: '00' } }
   ],
   personal: [
-    { name: 'LIGHT', velocity: '200', price: { int:'64', decimal: '90' }  },
-    { name: 'PLUS', velocity: '400', price: { int:'69', decimal: '90' }  },
-    { name: 'TURBO', velocity: '600', price: { int:'89', decimal: '90' }  },
-    { name: 'ULTRA', velocity: '800', price: { int:'129', decimal: '90' } }
+    // { name: 'LIGHT', velocity: '200', price: { int:'64', decimal: '90' }  },
+    { name: 'PLUS', velocity: '400', price: { int:'74', decimal: '90' }  },
+    { name: 'TURBO', velocity: '600', price: { int:'79', decimal: '90' }  },
+    { name: 'ULTRA', velocity: '800', price: { int:'84', decimal: '90' } },
+    { name: 'ULTRA', velocity: '1000', price: { int:'119', decimal: '90' } }
   ]
+}
+
+function formatVelocity(velocity) {
+  if (velocity >= 1000) {
+    return `${velocity / 1000} GB`
+  }
+  return `${velocity} MB`
 }
 
 function removeCurrentPlans() {
@@ -61,7 +69,7 @@ function changePlansInfo(planType) {
         <div class="section-plans__plans-item__content">
           <small class="section-plans__plans-item__type">${p.name}</small>
           <div class="section-plans__plans-item__speed">
-            ${p.velocity} MB
+            ${formatVelocity(p.velocity)}
           </div>
           <small class="section-plans__plans-item__price-text">POR APENAS</small>
           <div class="section-plans__plans-item__price">
@@ -69,15 +77,13 @@ function changePlansInfo(planType) {
             ${p.price.int}
             <span class="section-plans__plans-item__price-cents">,${p.price.decimal}<span class="pink">/mês</span></span>
           </div>
-          <a href="https://wa.me/557499949898?text=Quero contratar o plano de ${p.velocity} megas" target="_blank">
+          <a href="https://wa.me/557499949898?text=Quero contratar o plano de ${formatVelocity(p.velocity)}" target="_blank">
             <button class="btn btn-primary">
               <span>CONTRATAR</span>
             </button>
           </a>
           <p class="section-plans__plans-item__info">Instalação grátis</p>
           <p class="section-plans__plans-item__info">100% fibra</p>
-          <p class="section-plans__plans-item__info">Download de ${p.velocity} Mbps</p>
-          <p class="section-plans__plans-item__info">Upload de ${p.velocity} Mbps</p>
           ${
             planType === 'enterprise' ? `
               <p class="section-plans__plans-item__info">IP Publico Fixo (A Negociar)</p>
