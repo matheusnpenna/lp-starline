@@ -40,7 +40,7 @@ const plans = {
     { name: 'PLUS', velocity: '400', price: { int:'74', decimal: '90' }  },
     { name: 'TURBO', velocity: '600', price: { int:'79', decimal: '90' }  },
     { name: 'ULTRA', velocity: '800', price: { int:'84', decimal: '90' } },
-    { name: 'ULTRA', velocity: '1000', price: { int:'119', decimal: '90' } }
+    { name: 'ULTRA MAX', velocity: '1000', price: { int:'119', decimal: '90' } }
   ]
 }
 
@@ -84,6 +84,7 @@ function changePlansInfo(planType) {
           </a>
           <p class="section-plans__plans-item__info">Instalação grátis</p>
           <p class="section-plans__plans-item__info">100% fibra</p>
+          <p class="section-plans__plans-item__info">Roteador Wi-Fi</p>
           ${
             planType === 'enterprise' ? `
               <p class="section-plans__plans-item__info">IP Publico Fixo (A Negociar)</p>
