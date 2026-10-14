@@ -10,7 +10,7 @@ if (form) {
       data[key] = value;
     });
 
-    window.open(`https://wa.me/557499949898?text=${
+    window.open(`https://wa.me/5574999949897?text=${
       encodeURIComponent(`
         E-mail: ${data.email}
         Nome: ${data.name}
